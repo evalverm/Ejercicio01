@@ -1,4 +1,4 @@
-<div>
+<div appItemClassDirective  [ngClass]="item.estado == 0 ? 'claseEstadoCero' : 'claseEstadoUno'">
     <h1>{{item.titulo}}</h1>
     <h3>{{item.descripcion}}</h3>
     <h3>Estado : {{item.estado}}</h3>

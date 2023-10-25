@@ -1,1 +1,4 @@
-<app-item [item]="item" (eventoDesdeElHijo)="ejecutoEventoDesdeElHijo($event)"></app-item>
+<div *ngFor="let item of itemList">
+    <app-item *ngIf="!item.eliminado" [item]="item" (eventoDesdeElHijo)="ejecutoEventoDesdeElHijo($event)"></app-item>
+
+</div>

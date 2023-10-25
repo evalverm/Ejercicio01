@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaItemsComponent } from './listaItems/lista-items/lista-items.component';
 import { ItemComponent } from './item/item/item.component';
+import { ItemClassDirectiveDirective } from './directivas/item-class-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaItemsComponent,
-    ItemComponent
+    ItemComponent,
+    ItemClassDirectiveDirective
   ],
   imports: [
     BrowserModule,

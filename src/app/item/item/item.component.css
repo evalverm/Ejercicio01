@@ -1,0 +1,14 @@
+.claseItemDefault{
+    border-style: solid;
+    border-radius: 13px;
+    border-width: 1px;
+    margin-bottom: 2%;
+    padding: 3px 10px;
+}
+
+.claseEstadoCero{
+    background-color: lightgreen;
+}
+.claseEstadoUno{
+    background-color: orange;
+}
