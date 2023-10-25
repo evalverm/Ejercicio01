@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input,Output,EventEmitter,AfterViewInit } from '@angular/core';
 import { Item } from 'src/app/model/item';
 
 @Component({
@@ -8,9 +8,12 @@ import { Item } from 'src/app/model/item';
 })
 export class ItemComponent {
 
-  protected item : Item
+  @Input() item : Item
+  @Output() eventoDesdeElHijo = new EventEmitter<Item>()
 
   constructor(){
-    this.item = { titulo:"Este es mi item",descripcion: "Esta es mi descripcion",eliminado:false,fecha:new Date(),estado:0}
+  }
+  ngAfterViewInit(){
+    this.eventoDesdeElHijo.emit(this.item)
   }
 }
