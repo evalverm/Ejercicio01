@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ListaItemsComponent } from './listaItems/lista-items/lista-items.component';
 import { ItemComponent } from './item/item/item.component';
 import { ItemClassDirectiveDirective } from './directivas/item-class-directive.directive';
+import { NuevoItemComponent } from './nuevo-item/nuevo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaItemsComponent,
     ItemComponent,
-    ItemClassDirectiveDirective
+    ItemClassDirectiveDirective,
+    NuevoItemComponent
   ],
   imports: [
     BrowserModule,

@@ -2,3 +2,6 @@
     <app-item *ngIf="!item.eliminado" [item]="item" (eventoDesdeElHijo)="ejecutoEventoDesdeElHijo($event)"></app-item>
 
 </div>
+<nav>
+    <Button class="button" routerLink="{{nuevoItemLink}}">Nuevo item</Button>
+</nav>
