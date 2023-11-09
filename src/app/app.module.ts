@@ -3,22 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListaItemsComponent } from './listaItems/lista-items/lista-items.component';
-import { ItemComponent } from './item/item/item.component';
-import { ItemClassDirectiveDirective } from './directivas/item-class-directive.directive';
-import { NuevoItemComponent } from './nuevo-item/nuevo-item.component';
+import { ItemModule } from './item/item.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaItemsComponent,
-    ItemComponent,
-    ItemClassDirectiveDirective,
-    NuevoItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ItemModule
   ],
   providers: [],
   bootstrap: [AppComponent]

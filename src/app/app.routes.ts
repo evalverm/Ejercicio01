@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router"
-import { ListaItemsComponent } from "./listaItems/lista-items/lista-items.component"
-import { NuevoItemComponent } from "./nuevo-item/nuevo-item.component"
+import { NuevoItemComponent } from "./item/components/nuevo-item/nuevo-item.component"
+import { ListaItemsComponent } from "./item/components/lista-items/lista-items.component"
+
 
 export class AppRoutes {
     public static NUEVO_ITEM : string = "nuevo-item"
